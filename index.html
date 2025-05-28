@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Set up the page -->
+<head>
+    <meta charset="UTF-8">
+    <title>Town Data</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<!-- Call the script when page loads -->
+<body onload="getDataAjax()">
+
+    <!-- Title element -->
+    <div class="container">
+        <h1>Town Data</h1>
+        <select id="towns-dropdown"></select>
+        <button id="compare">Compare Selected Towns</button>
+    </div>
+
+    <!-- Widget element -->
+    <div class="towns">
+        <h1>Town Info</h1>
+        <div id="dashboard"></div>
+    </div>
+
+    <!-- Graph element -->
+    <div id="chartArea">
+        <canvas id="weatherChart"></canvas>
+    </div>
+    
+</body>
+</html>
